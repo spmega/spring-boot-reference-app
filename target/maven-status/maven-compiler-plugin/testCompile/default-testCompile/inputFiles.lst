@@ -1,0 +1,10 @@
+/home/shashank/working/dev/spring_projects/app-center/src/test/java/com/vpath/appcenter/service/ApplicationServiceImplDeleteTest.java
+/home/shashank/working/dev/spring_projects/app-center/src/test/java/com/vpath/appcenter/repository/ApplicationRepositoryDeleteTests.java
+/home/shashank/working/dev/spring_projects/app-center/src/test/java/com/vpath/appcenter/repository/ApplicationRepositorySaveTests.java
+/home/shashank/working/dev/spring_projects/app-center/src/test/java/com/vpath/appcenter/service/ApplicationServiceImplGetTest.java
+/home/shashank/working/dev/spring_projects/app-center/src/test/java/com/vpath/appcenter/service/ApplicationServiceImplUpdateTest.java
+/home/shashank/working/dev/spring_projects/app-center/src/test/java/com/vpath/appcenter/AppCenterApplicationTests.java
+/home/shashank/working/dev/spring_projects/app-center/src/test/java/com/vpath/appcenter/service/ApplicationServiceImplSaveTest.java
+/home/shashank/working/dev/spring_projects/app-center/src/test/java/com/vpath/appcenter/repository/ApplicationRepositoryFindUsingDtoTests.java
+/home/shashank/working/dev/spring_projects/app-center/src/test/java/com/vpath/appcenter/controller/ApplicationRestControllerGetApplicationIT.java
+/home/shashank/working/dev/spring_projects/app-center/src/test/java/com/vpath/appcenter/repository/ApplicationRepositoryFindAllTests.java

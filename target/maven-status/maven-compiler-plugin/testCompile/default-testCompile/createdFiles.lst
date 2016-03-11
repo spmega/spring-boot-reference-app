@@ -1,0 +1,10 @@
+com/vpath/appcenter/service/ApplicationServiceImplUpdateTest.class
+com/vpath/appcenter/repository/ApplicationRepositoryFindAllTests.class
+com/vpath/appcenter/repository/ApplicationRepositorySaveTests.class
+com/vpath/appcenter/controller/ApplicationRestControllerGetApplicationIT.class
+com/vpath/appcenter/service/ApplicationServiceImplSaveTest.class
+com/vpath/appcenter/service/ApplicationServiceImplGetTest.class
+com/vpath/appcenter/service/ApplicationServiceImplDeleteTest.class
+com/vpath/appcenter/repository/ApplicationRepositoryFindUsingDtoTests.class
+com/vpath/appcenter/AppCenterApplicationTests.class
+com/vpath/appcenter/repository/ApplicationRepositoryDeleteTests.class
