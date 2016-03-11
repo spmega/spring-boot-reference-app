@@ -1,0 +1,7 @@
+com/vpath/appcenter/domain/Application.class
+com/vpath/appcenter/repository/ApplicationRepository.class
+com/vpath/appcenter/controller/ApplicationRestController.class
+com/vpath/appcenter/dto/ApplicationDTO.class
+com/vpath/appcenter/service/ApplicationServiceImpl.class
+com/vpath/appcenter/AppCenterApplication.class
+com/vpath/appcenter/service/ApplicationService.class

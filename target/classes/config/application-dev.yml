@@ -1,0 +1,8 @@
+spring:
+  profiles.active: dev
+  application:
+    name: app-center
+  logback:
+    loglevel: DEBUG
+server:
+  port:8001

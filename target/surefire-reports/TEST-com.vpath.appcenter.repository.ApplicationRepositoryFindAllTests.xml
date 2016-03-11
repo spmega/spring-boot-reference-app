@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.vpath.appcenter.repository.ApplicationRepositoryFindAllTests" time="0" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/local/java/jdk1.8.0_65/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.65-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/shashank/working/dev/spring_projects/app-center"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/shashank/working/dev/spring_projects/app-center"/>
+    <property name="java.runtime.version" value="1.8.0_65-b17"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/local/java/jdk1.8.0_65/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/local/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.2.0-30-generic"/>
+    <property name="user.home" value="/home/shashank"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="shashank"/>
+    <property name="java.class.path" value="/usr/local/maven/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/local/java/jdk1.8.0_65/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher integration-test -P integration"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_65"/>
+    <property name="java.ext.dirs" value="/usr/local/java/jdk1.8.0_65/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/local/java/jdk1.8.0_65/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_65/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_65/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_65/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_65/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_65/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_65/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_65/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="findAllTest" classname="com.vpath.appcenter.repository.ApplicationRepositoryFindAllTests" time="0">
+    <failure message="expected:&lt;6&gt; but was:&lt;8&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<6> but was:<8>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.vpath.appcenter.repository.ApplicationRepositoryFindAllTests.findAllTest(ApplicationRepositoryFindAllTests.java:44)
+]]></failure>
+    <system-out><![CDATA[2016-03-11 18:15:07.783 DEBUG 5718 --- [           main] c.vpath.appcenter.AppCenterApplication   : Im in after class method
+2016-03-11 18:15:07.786  INFO 5718 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.vpath.appcenter.repository.ApplicationRepositoryFindAllTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-03-11 18:15:07.790  INFO 5718 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-03-11 18:15:07.800  INFO 5718 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@62a6674f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70881123, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@703fa45, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5e905f2c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@fddd7ae, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3f6cce7f]
+2016-03-11 18:15:07.800 DEBUG 5718 --- [           main] c.vpath.appcenter.AppCenterApplication   : Im in before class method
+2016-03-11 18:15:07.809 DEBUG 5718 --- [           main] org.hibernate.SQL                        : select applicatio0_.id as id1_0_, applicatio0_.description as descript2_0_, applicatio0_.name as name3_0_ from application applicatio0_
+]]></system-out>
+  </testcase>
+</testsuite>

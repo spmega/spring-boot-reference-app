@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.vpath.appcenter.repository.ApplicationRepositoryFindAllTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE! - in com.vpath.appcenter.repository.ApplicationRepositoryFindAllTests
+findAllTest(com.vpath.appcenter.repository.ApplicationRepositoryFindAllTests)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<6> but was:<8>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.vpath.appcenter.repository.ApplicationRepositoryFindAllTests.findAllTest(ApplicationRepositoryFindAllTests.java:44)
+

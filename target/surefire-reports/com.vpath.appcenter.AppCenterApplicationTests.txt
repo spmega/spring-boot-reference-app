@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.vpath.appcenter.AppCenterApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.642 sec - in com.vpath.appcenter.AppCenterApplicationTests
