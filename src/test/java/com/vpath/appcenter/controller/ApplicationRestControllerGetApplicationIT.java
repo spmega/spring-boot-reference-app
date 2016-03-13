@@ -84,10 +84,21 @@ public class ApplicationRestControllerGetApplicationIT {
 	
 	@Test
 	public void deleteApplicationTests(){
-		with().parameters("name", "TestApp", "description", "Integration Testing, very exciting")  
+		String name = "TestApp";
+		String description = "Integration Testing, very exciting";
+		
+		with().parameters("name", name, "description", description)  
 		.expect()
 		  	.statusCode(HttpStatus.SC_OK)
 		  .when()
 		  .post("/delete");
+		
+		ApplicationDTO dtoObject = new ApplicationDTO();
+		dtoObject.setName(name);
+		dtoObject.setDescription(description);
+		
+		ApplicationDTO resultDtoObject = this.service.getApplication(dtoObject);
+		
+		assertNull(resultDtoObject);
 	}
 }
