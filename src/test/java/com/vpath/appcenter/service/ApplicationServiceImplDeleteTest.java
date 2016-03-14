@@ -59,13 +59,19 @@ public class ApplicationServiceImplDeleteTest {
 	@Test
 	public void deleteTest(){
 		ApplicationDTO dtoObject = new ApplicationDTO();
+		Application app = new Application();
+		
 		String name = "Marco";
 		dtoObject.setName(name);
+		app.setName(name);
 		log.info("Saving name in dto object");
 		
 		String description = "Polo";
 		dtoObject.setDescription(description);
+		app.setDescription(description);
 		log.info("Saving description in dto object");
+		
+		this.repository.save(app);
 		
 		this.service.deleteApplication(dtoObject);
 		

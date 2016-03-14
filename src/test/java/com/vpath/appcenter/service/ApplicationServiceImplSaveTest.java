@@ -1,6 +1,6 @@
 package com.vpath.appcenter.service;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,7 +10,6 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.vpath.appcenter.AppCenterApplication;
-import com.vpath.appcenter.domain.Application;
 import com.vpath.appcenter.dto.ApplicationDTO;
 import com.vpath.appcenter.repository.ApplicationRepository;
 
@@ -30,13 +29,19 @@ public class ApplicationServiceImplSaveTest {
 	
 	@Test
 	public void saveTest(){
+		String name = "Save Test";
+		String description = "Save Test application";
+		
 		ApplicationDTO dtoObject = new ApplicationDTO();
-		dtoObject.setName("Test");
-		dtoObject.setDescription("Test application");
+		dtoObject.setName(name);
+		dtoObject.setDescription(description);
+		
 		this.service.saveApplication(dtoObject);
-		Application resultApp = this.repository.findOne(7L);
-		assertEquals(dtoObject.getName(), resultApp.getName());
-		assertEquals(dtoObject.getDescription(), resultApp.getDescription());
+		
+		ApplicationDTO resultDtoObject = this.service.getApplication(dtoObject);
+		
+		assertEquals(name, resultDtoObject.getName());
+		assertEquals(description, resultDtoObject.getDescription());
 	}
 	
 }

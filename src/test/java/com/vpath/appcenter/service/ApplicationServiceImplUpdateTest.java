@@ -58,25 +58,35 @@ public class ApplicationServiceImplUpdateTest {
 	
 	@Test
 	public void updateTest(){
-		ApplicationDTO dtoObject = new ApplicationDTO();
 		String name = "Test";
-		dtoObject.setName(name);
-		
 		String description = "Test application";
+		
+		String updatedName = "Test";
+		String updatedDescription = "Test application updated";
+		
+		ApplicationDTO dtoObject = new ApplicationDTO();
+		ApplicationDTO updatedDtoObject = new ApplicationDTO();
+		
+		dtoObject.setName(name);
 		dtoObject.setDescription(description);
 		
-		ApplicationDTO updatedDtoObject = new ApplicationDTO();
-		String updatedName = "Test";
 		updatedDtoObject.setName(updatedName);
-		
-		String updatedDescription = "Test application updated";
 		updatedDtoObject.setDescription(updatedDescription);
-		this.service.saveApplication(dtoObject);
-		this.service.updateApplication(dtoObject, updatedDtoObject);
 		
-		Application resultApp = this.repository.findOne(7L);
-		assertEquals(dtoObject.getName(), resultApp.getName());
-		assertNotEquals(dtoObject.getDescription(), resultApp.getDescription());
+		this.service.saveApplication(dtoObject);
+		Application savedApp = this.repository.findByNameAndDescription(name, description);
+		
+		this.service.updateApplication(dtoObject, updatedDtoObject);
+		Application updatedApp = this.repository.findByNameAndDescription(updatedName, updatedDescription);
+		
+		assertNotNull(updatedApp);
+		assertNotNull(savedApp);
+		
+		assertNotEquals(savedApp.getDescription(), updatedApp.getDescription());
+		
+		assertEquals(savedApp.getName(), updatedApp.getName());
+		assertEquals(savedApp.getClass(), updatedApp.getClass());
+		assertEquals(savedApp.getId(), updatedApp.getId());
 	}
 	
 }
